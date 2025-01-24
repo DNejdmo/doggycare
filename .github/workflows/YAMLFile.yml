@@ -25,8 +25,8 @@ jobs:
       - name: Deploy to aws EB
         uses: einaregilsson/beanstalk-deploy@v21
         with:
-           aws_access_key: ${{secrets.AWS_ACCESS_KEY_ID}}
-           aws_secret_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+           aws_access_key: ${{secrets.AWS__ACCESS_KEY_ID}}
+           aws_secret_key: ${{secrets.AWS__SECRET_ACCESS_KEY}}
            application_name: MyApplication
            environment_name: MyApplication-env
            version_label: ${{ github.run_id }}
